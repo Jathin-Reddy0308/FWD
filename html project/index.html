@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Saver – Reduce Waste, Feed Hope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <h2>🌿 Food Saver</h2>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="request.html">Request</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <h1>Save Food, Save Lives</h1>
+        <p>Join our community in reducing food waste and helping people in need around us.</p>
+        <a href="donate.html" class="hero-btn">Start Donating →</a>
+    </div>
+</header>
+
+<!-- STATS -->
+<div class="stats-strip">
+    <div class="stat-card">
+        <span class="stat-num">1,200+</span>
+        <span class="stat-label">Meals Donated</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-num">340+</span>
+        <span class="stat-label">Families Helped</span>
+    </div>
+    <div class="stat-card">
+        <span class="stat-num">80%</span>
+        <span class="stat-label">Less Food Wasted</span>
+    </div>
+</div>
+
+<!-- ABOUT SPLIT -->
+<div class="about-split">
+    <img class="about-img" src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=700&q=80" alt="Fresh vegetables and fruits">
+    <div class="about-text">
+        <h2>About Food Saver</h2>
+        <p>This platform helps people donate surplus food instead of throwing it away. Those in need can request food and get connected with donors nearby.</p>
+        <p>Our goal is simple — share what you have, get what you need. Together we can make food waste a thing of the past.</p>
+        <a href="request.html" class="hero-btn" style="font-size:13px; padding:10px 22px; margin-top:8px; display:inline-block;">Request Food →</a>
+    </div>
+</div>
+
+<!-- FEATURE BOXES -->
+<div class="grid">
+    <div class="box">
+        <span class="box-icon">🌱</span>
+        <h3>Reduce Waste</h3>
+        <p>Prevent good food from being thrown away unnecessarily.</p>
+    </div>
+    <div class="box">
+        <span class="box-icon">🤝</span>
+        <h3>Help People</h3>
+        <p>Support communities by sharing your extra food with those who need it.</p>
+    </div>
+    <div class="box">
+        <span class="box-icon">♻️</span>
+        <h3>Eco Friendly</h3>
+        <p>Promote sustainable and responsible living habits every day.</p>
+    </div>
+</div>
+
+<!-- IMAGE BANNER -->
+<div class="img-banner">
+    <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=1200&q=80" alt="Volunteers sharing food">
+    <div class="img-banner-overlay">
+        <div>
+            <h2>Why Food Waste Matters</h2>
+            <p>Every year, millions of tonnes of food are wasted while many go hungry. Small actions make a big difference.</p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<section class="container">
+    <h2>Contact Us</h2>
+    <p>Have a question or suggestion? We'd love to hear from you.</p>
+    <form onsubmit="contactMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="contactMsg"></p>
+</section>
+
+<footer>© 2026 Food Saver &nbsp;|&nbsp; Made with 💚 to fight food waste</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
