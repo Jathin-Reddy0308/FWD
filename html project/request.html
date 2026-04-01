@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Food – Food Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <h2>🌿 Food Saver</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="request.html" class="active">Request</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1516685304081-4b4a6fa37d4a?w=1400&q=80');"></div>
+    <div class="page-hero-content">
+        <h1>🙏 Request Food</h1>
+        <p>We're here to help. Let us know what you need.</p>
+    </div>
+</div>
+
+<!-- REQUEST FORM -->
+<section class="container">
+    <h2>Submit a Request</h2>
+    <p>If you or someone you know needs food support, fill in the form below and we'll try to connect you with a donor.</p>
+
+    <form id="requestForm">
+        <input type="text" id="rname" placeholder="Your Name" required>
+        <input type="text" id="rphone" placeholder="Phone Number" required>
+        <input type="text" id="rtype" placeholder="Food Needed (e.g. Rice, Vegetables)" required>
+        <input type="number" id="rquantity" placeholder="Quantity (servings)" min="1" required>
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <p id="reqMsg"></p>
+    <button onclick="clearRequests()">Clear All Requests</button>
+</section>
+
+<!-- IMAGE BANNER -->
+<div class="img-banner">
+    <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=1200&q=80" alt="Community helping each other">
+    <div class="img-banner-overlay">
+        <div>
+            <h2>You're Not Alone</h2>
+            <p>Our community is here to help. Don't hesitate to reach out when you need support.</p>
+        </div>
+    </div>
+</div>
+
+<!-- REQUESTS LIST -->
+<section class="container">
+    <h3>📋 Food Requests</h3>
+    <p>Below are the current requests made by users in our community.</p>
+    <ul id="requestList"></ul>
+</section>
+
+<footer>© 2026 Food Saver &nbsp;|&nbsp; Made with 💚 to fight food waste</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

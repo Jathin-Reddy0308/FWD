@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate Food – Food Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <h2>🌿 Food Saver</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donate.html" class="active">Donate</a></li>
+        <li><a href="request.html">Request</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1593113630400-ea4288922559?w=1400&q=80');"></div>
+    <div class="page-hero-content">
+        <h1>🥗 Donate Food</h1>
+        <p>Your extra food can be someone else's meal today.</p>
+    </div>
+</div>
+
+<!-- DONATE FORM -->
+<section class="container">
+    <h2>Submit a Donation</h2>
+    <p>Fill in the details below and your donation will be listed for people in need to see.</p>
+
+    <form id="donateForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="food" placeholder="Food Type (e.g. Rice, Bread, Curry)" required>
+        <input type="number" id="quantity" placeholder="Quantity (servings)" min="1" required>
+        <button type="submit">Submit Donation</button>
+    </form>
+
+    <p id="successMsg"></p>
+    <button onclick="clearDonations()">Clear All Donations</button>
+</section>
+
+<!-- IMAGE BANNER -->
+<div class="img-banner">
+    <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1200&q=80" alt="Fresh food donations">
+    <div class="img-banner-overlay">
+        <div>
+            <h2>Every Bit Counts</h2>
+            <p>Even a small donation of food can feed a family for a day. Thank you for caring.</p>
+        </div>
+    </div>
+</div>
+
+<!-- DONATION LIST -->
+<section class="container">
+    <h3>📋 Available Donations</h3>
+    <p>Below is the list of food donated by users. Contact us to arrange a pickup.</p>
+    <ul id="donationList"></ul>
+</section>
+
+<footer>© 2026 Food Saver &nbsp;|&nbsp; Made with 💚 to fight food waste</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
